@@ -1,0 +1,226 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header {
+    margin-top: 73px;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#survey-form {
+    margin: 65px auto;
+    width: 56%;
+    background-color: rgba(45, 45, 45, 0.7);
+    padding: 28px;
+    border-radius: 4px;
+}
+
+#name-label {
+    color: white;
+    line-height: 2;
+    font-size: 21px;
+}
+
+#email-label {
+    color: white;
+    line-height: 2;
+    font-size: 21px;
+}
+
+#number-label {
+    color: white;
+    line-height: 2;
+    font-size: 21px;
+}
+
+#survey-form .form-input {
+    width: 100%;
+    padding: 11px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+#survey-form p {
+    color: white;
+    font-size: 21px;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 11px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#survey-form fieldset {
+    padding: 11px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+#survey-form fieldset legend {
+    color: white;
+    font-size: 21px;
+}
+
+#survey-form fieldset label {
+    color: white;
+    font-size: 21px;
+}
+
+input[type="radio"] {
+    margin: 0px 5px 0px 70px;
+}
+
+input[type="checkbox"] {
+    margin: 0px 13px 0px 5px;
+}
+
+#check label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 11px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+#submit {
+    width: 100%;
+    padding: 11px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+#submit:hover {
+    background-color: rgb(25, 25, 228);
+}
+
+@media only screen and (max-width: 1024px) {
+    #survey-form {
+        width: 68%;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    #survey-form {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    #description {
+        margin: 11px;
+    }
+
+    input[type="radio"] {
+        margin: 0px 5px 0px 21px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #survey-form {
+        width: 90%;
+    }
+
+    #survey-form fieldset label {
+        display: block;
+    }
+
+    input[type="radio"] {
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    #survey-form {
+        width: 90%;
+    }
+
+    #survey-form fieldset label {
+        display: block;
+    }
+
+    input[type="radio"] {
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #title {
+        margin: 11px;
+    }
+
+    #description {
+        margin: 11px;
+    }
+
+    #survey-form {
+        width: 90%;
+    }
+
+    #survey-form fieldset label {
+        display: block;
+    }
+
+    input[type="radio"] {
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #survey-form {
+        width: 94%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #survey-form {
+        width: 100%;
+    }
+
+    #survey-form fieldset {
+        padding: 0px;
+    }
+}
